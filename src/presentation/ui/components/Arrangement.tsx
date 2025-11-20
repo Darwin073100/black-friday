@@ -2,6 +2,7 @@ import { FaCircle } from "react-icons/fa";
 import UserPicture from'../../assets/pictures/user.jpg';
 import { Button } from "./Button";
 import { ArrangementOption } from "./ArrangementOption";
+import Video from '../../assets/videos/Video.mp4';
 
 const Arrangement = () => {
     return (
@@ -59,6 +60,14 @@ const Arrangement = () => {
                     description="Los primeros 6 meses del servicio ahorras un 15%" 
                     btnText="Saber más"
                     important/>
+            </section>
+            <section className="m-4 bg-white rounded-2xl px-4 py-2 sm:hidden">
+                <h1 className="text-center font-bold text-xl text-gray-700">¿Cómo funciona?</h1>
+                <div className="flex max-sm:flex-col justify-center gap-16 max-sm:gap-8 items-center text-gray-700">
+                    <div>
+                        <video src={Video} controls className='w-[450px] p-4'></video>
+                    </div>
+                </div>
             </section>
         </article>
     )
