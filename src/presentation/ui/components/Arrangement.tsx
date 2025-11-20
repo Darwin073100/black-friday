@@ -3,8 +3,11 @@ import UserPicture from'../../assets/pictures/user.jpg';
 import { Button } from "./Button";
 import { ArrangementOption } from "./ArrangementOption";
 import Video from '../../assets/videos/Video.mp4';
+import { useArrangement } from "../../hooks/useArrangement";
 
 const Arrangement = () => {
+    const { response } = useArrangement();
+    console.log(response);
     return (
         <article className="bg-blue-950 text-white flex flex-col pb-8">
             <Button className='my-7 bg-yellow-500 md:hidden shadow-sm shadow-amber-300 hover:bg-yellow-300 transition duration-300'>
