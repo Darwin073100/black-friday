@@ -50,19 +50,16 @@ const Arrangement = () => {
                 </div>
             </section>
             <section className="mt-2 w-full grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 justify-items-center justify-center items-center">
+                { response.ok && response.data ? response.data?.plans.map(item=> <>
                 <ArrangementOption
-                    title="Semestral"
-                    description="Los primeros 6 meses del servicio ahorras un 15%" 
-                    btnText="Saber más"/>
-                <ArrangementOption
-                    title="Semestral"
-                    description="Los primeros 6 meses del servicio ahorras un 15%" 
-                    btnText="Saber más"/>
-                <ArrangementOption
-                    title="Semestral"
-                    description="Los primeros 6 meses del servicio ahorras un 15%" 
-                    btnText="Saber más"
-                    important/>
+                    key={item.id}
+                    title={item.nombre}
+                    description={item.descripcionCorta} 
+                    btnText={item.boton.texto}
+                    important={item.destacado}/>
+                </>):
+                    <span>Planes no disponibles</span>
+                }
             </section>
             <section className="m-4 bg-white rounded-2xl px-4 py-2 sm:hidden">
                 <h1 className="text-center font-bold text-xl text-gray-700">¿Cómo funciona?</h1>
