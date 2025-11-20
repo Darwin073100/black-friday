@@ -46,7 +46,7 @@ const Arrangement = () => {
                     </Button>
                 </div>
             </section>
-            <section className="mt-2 w-full grid grid-cols-3 max-sm:grid-cols-1 gap-2 justify-items-center justify-center items-center">
+            <section className="mt-2 w-full grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 justify-items-center justify-center items-center">
                 <ArrangementOption
                     title="Semestral"
                     description="Los primeros 6 meses del servicio ahorras un 15%" 

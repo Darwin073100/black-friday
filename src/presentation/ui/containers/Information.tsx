@@ -56,7 +56,7 @@ const Information = () => {
             <section>
                 <h1 className="text-center font-bold text-4xl max-sm:text-2xl text-gray-700 mt-8 mb-12 max-sm:mt-4 max-sm:mb-4">Veneficio para los residentes</h1>
                 <div>
-                    <div className='grid grid-cols-4 gap-4 max-sm:grid-cols-1 justify-center justify-items-center p-4'>
+                    <div className='grid grid-cols-4 gap-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3 justify-center justify-items-center p-4'>
                         {infoItems.map(item=> <>
                             <InfoSummary 
                             {...item} />
