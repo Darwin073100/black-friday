@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FloatingPromotion } from "../components/FloatingPromotion";
 import { HeaderPromotion } from "../components/HeaderPromotion";
+import { Arrangement } from "../components/Arrangement";
 
 const Home = () => {
   const [floatingActive, setFloatingActive] = useState(false);
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <main>
       <HeaderPromotion />
+      <Arrangement />
       {
         floatingActive && <FloatingPromotion onClose={handleCloseFloating} />
       }
