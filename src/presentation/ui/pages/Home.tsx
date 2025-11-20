@@ -7,7 +7,7 @@ import { JoinArrangement } from "../containers/JoinArrangement";
 import { Footer } from "../containers/Footer";
 
 const Home = () => {
-  const [floatingActive, setFloatingActive] = useState(false);
+  const [floatingActive, setFloatingActive] = useState(true);
 
   const handleCloseFloating = () => {
     setFloatingActive(false);
