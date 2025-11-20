@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FloatingPromotion } from "../components/FloatingPromotion";
 
 const Home = () => {
-  const [floatingActive, setFloatingActive] = useState(false);
+  const [floatingActive, setFloatingActive] = useState(true);
 
   const handleCloseFloating = () => {
     setFloatingActive(false);

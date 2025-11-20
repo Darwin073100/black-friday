@@ -37,3 +37,25 @@
   object-fit: cover;
   object-position: bottom;
 }
+
+@media(max-width: 768px){
+    .picture-container {
+        width: 450px;
+        height: 350px;
+    }
+    .picture {
+        width: 450px;
+        height: 350px; 
+    }
+}
+
+@media(max-width: 640px){
+    .picture-container {
+        width: 350px;
+        height: 250px;
+    }
+    .picture {
+        width: 350px;
+        height: 250px; 
+    }
+}
