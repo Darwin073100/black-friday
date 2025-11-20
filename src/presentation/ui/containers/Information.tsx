@@ -1,5 +1,6 @@
 import { CiWarning } from 'react-icons/ci';
 import Logo from '../../assets/logos/hausiva.png';
+import Phone from '../../assets/pictures/Phone.jpg';
 import Video from '../../assets/videos/Video.mp4';
 import { InfoSummary } from '../components/InfoSummary';
 import { LiaBusinessTimeSolid } from 'react-icons/lia';
@@ -41,13 +42,16 @@ const Information = () => {
                         <div className='flex flex-col justify-center items-center w-[350px]'>
                             <span className='font-semibold text-4xl max-sm:text-2xl'>Control total,</span>
                             <span className='font-bold text-3xl max-sm:text-2xl'>operación eficiente</span>
-                            <p className='text-center'>Optimiza la gestión posventa con una plataforma diseñada para maximizar eficiencia.</p>
+                            <p className='text-center max-sm:text-sm'>Optimiza la gestión posventa con una plataforma diseñada para maximizar eficiencia.</p>
                         </div>
                     </div>
                     <div className='max-sm:hidden'>
                         <video src={Video} controls className='w-[450px]'></video>
                     </div>
                 </div>
+            </section>
+            <section className='sm:hidden p-4'>
+                <img src={Phone} alt="Phone" className='rounded-2xl' />
             </section>
             <section>
                 <h1 className="text-center font-bold text-4xl max-sm:text-2xl text-gray-700 mt-8 mb-12 max-sm:mt-4 max-sm:mb-4">Veneficio para los residentes</h1>
